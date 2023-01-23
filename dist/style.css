@@ -1,3 +1,9 @@
+.container-title {
+    color: black;
+    font-size: 100px;
+    background-color:darkcyan;
+}
+
 .jumbotron {
     text-align: center;
     text-transform: uppercase;
@@ -7,4 +13,26 @@
 	font-style: italic;
     font-variant: normal;
     text-transform: capitalize;
+}
+
+.employee-card {
+    margin: 35px;
+    border: 3px  soli blue;
+    background-color: lightgray;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 3px;
+    color: black;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+h4 {
+    text-align: center;
+    text-shadow: 6px;
+    color: maroon;
+    font-weight: lighter;
+    font-size: 20px;
 }

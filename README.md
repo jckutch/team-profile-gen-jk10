@@ -51,7 +51,7 @@ THEN I exit the application, and the HTML is generated<br />
 6) Then open the `index.html` file in a browser to output the results.
 
 ## Usage
-Following the command line prompts, you can generate your teams profiles, which includes professional title, name, ID, email, GitHub profile and school.  The user can access information via the outputted webpage.
+Following the command line prompts, you can generate your teams profiles, which includes professional title, name, employee ID, email, GitHub profile and school.  The user can access information via the outputted webpage.
 
 ## Link
 Repository Link:  https://github.com/jckutch/team-profile-gen-jk10

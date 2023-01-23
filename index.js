@@ -8,53 +8,80 @@ const fs = require()
 
 // Array of questions for user input
 // Manager Input
-function manager() {
+function managerAdd() {
     inquirer.prompt ([
     {
         type: 'input',
         name: 'managerName',
-        message: 'What is your project title?'
+        message: "What is the manager's name?",
     },
     {
         type: 'input',
-        name: 'description',
-        message: 'Please give a description of your project?',
+        name: 'managerId',
+        message: "What is the manager's employee ID?",
     },
     {
         type: 'input',
-        name: 'installation',
-        message: 'What does the user need to install to run the project?',
+        name: 'managerEmail',
+        message: "What is the manager's email address?",
     },
     {
         type: 'input',
-        name: 'usage',
-        message: 'What will the project be used for?',
+        name: 'managerNumber',
+        message: "What is the manager's office number?",
     },
-    {
-        type: 'input',
-        name: 'contributing',
-        message: 'How does the user contribute to the project?',
-    },
-    {
-        type: 'input',
-        name: 'tests',
-        message: 'What should the user know about tests for the project?',
-    },
-    {
-        type: 'input',
-        name: 'github',
-        message: 'What is your GitHub username?'
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'What is your email address?'
-    },
-    {
-        type: 'list',
-        name: 'license',
-        message: 'What kind of license should your project have?',
-        choices: ['Apache', 'GPL', 'MIT', 'Mozilla', 'None']
-    }
     ]
     )};
+
+// Engineer Input
+    function engineerAdd() {
+        inquirer.prompt ([
+        {
+            type: 'input',
+            name: 'engineerName',
+            message: "What is the engineer's name?",
+        },
+        {
+            type: 'input',
+            name: 'engineerId',
+            message: "What is the engineer's employee ID?",
+        },
+        {
+            type: 'input',
+            name: 'engineerEmail',
+            message: "What is the engineer's email address?",
+        },
+        {
+            type: 'input',
+            name: 'engineerNumber',
+            message: "What is the engineer's GitHub username?",
+        },
+        ]
+        )};
+
+
+// Intern Input
+    function engineerAdd() {
+        inquirer.prompt ([
+        {
+            type: 'input',
+            name: 'internName',
+            message: "What is the intern's name?",
+        },
+        {
+            type: 'input',
+            name: 'internId',
+            message: "What is the intern's employee ID?",
+        },
+        {
+            type: 'input',
+            name: 'internEmail',
+            message: "What is the intern's email address?",
+        },
+        {
+            type: 'input',
+            name: 'internNumber',
+            message: "What is the intern's school?",
+        },
+        ]
+        )};
