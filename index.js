@@ -3,8 +3,18 @@
 const Manager = require()
 const Engineer = require()
 const Intern = require()
-const inquirer = require()
 const fs = require()
+const inquirer = require()
+
+function runApp- () {
+
+    function teamAdd () {
+      inquirer.prompt([{
+        type: "list",
+        message: "Title of employee you like to add to your team?",
+        name: "employeeAdd",
+        choices: ["Manager", "Engineer", "Intern", "There are no more member's needed."]
+
 
 // Array of questions for user input
 // Manager Input
@@ -13,22 +23,22 @@ function managerAdd() {
     {
         type: 'input',
         name: 'managerName',
-        message: "What is the manager's name?",
+        message: "Enter manager's name.",
     },
     {
         type: 'input',
         name: 'managerId',
-        message: "What is the manager's employee ID?",
+        message: "Enter manager's employee ID.",
     },
     {
         type: 'input',
         name: 'managerEmail',
-        message: "What is the manager's email address?",
+        message: "Enter manager's email address.",
     },
     {
         type: 'input',
         name: 'managerNumber',
-        message: "What is the manager's office number?",
+        message: "Enter manager's office number.",
     },
     ]
     )};
@@ -39,22 +49,22 @@ function managerAdd() {
         {
             type: 'input',
             name: 'engineerName',
-            message: "What is the engineer's name?",
+            message: "Enter engineer's name.",
         },
         {
             type: 'input',
             name: 'engineerId',
-            message: "What is the engineer's employee ID?",
+            message: "Enter engineer's employee ID.",
         },
         {
             type: 'input',
             name: 'engineerEmail',
-            message: "What is the engineer's email address?",
+            message: "Enter engineer's email address.",
         },
         {
             type: 'input',
             name: 'engineerNumber',
-            message: "What is the engineer's GitHub username?",
+            message: "Enter engineer's GitHub username.",
         },
         ]
         )};
@@ -66,22 +76,22 @@ function managerAdd() {
         {
             type: 'input',
             name: 'internName',
-            message: "What is the intern's name?",
+            message: "Enter intern's name.",
         },
         {
             type: 'input',
             name: 'internId',
-            message: "What is the intern's employee ID?",
+            message: "Enter intern's employee ID.",
         },
         {
             type: 'input',
             name: 'internEmail',
-            message: "What is the intern's email address?",
+            message: "Enter intern's email address.",
         },
         {
             type: 'input',
             name: 'internNumber',
-            message: "What is the intern's school?",
+            message: "Enter intern's school.",
         },
         ]
         )};
