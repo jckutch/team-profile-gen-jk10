@@ -6,15 +6,28 @@ const Intern = require()
 const fs = require()
 const inquirer = require()
 
-function runApp- () {
 
-    function teamAdd () {
+// Create objects for each team member 
+myTeam = [];
+
+function runApp () {
+
+    function team () {
       inquirer.prompt([{
         type: "list",
-        message: "Title of employee you like to add to your team?",
+        message: "Title of employee to add to team?",
         name: "employeeAdd",
         choices: ["Manager", "Engineer", "Intern", "There are no more member's needed."]
-
+    }]).then(function (userInput) {
+        switch(userInput.employeeAdd) {
+          case "Manager": managerAdd(); break;
+          case "Engineer": engineerAdd(); break;
+          case "Intern": internAdd(); break;
+          default:
+            htmlBuilder();
+        }
+      })
+    } 
 
 // Array of questions for user input
 // Manager Input
@@ -71,7 +84,7 @@ function managerAdd() {
 
 
 // Intern Input
-    function engineerAdd() {
+    function internAdd() {
         inquirer.prompt ([
         {
             type: 'input',
@@ -95,3 +108,6 @@ function managerAdd() {
         },
         ]
         )};
+    }
+
+        runApp();
