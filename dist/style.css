@@ -1,7 +1,12 @@
+.container {
+    background-color: rgb(164, 187, 206);
+}
+
 .container-fluid {
     color: rgb(231, 190, 86);
     font-size: 100px;
     background-color: rgb(7, 66, 114);
+    margin-block: 2% ;
 }
 
 .jumbotron {

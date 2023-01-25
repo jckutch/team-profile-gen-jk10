@@ -53,7 +53,7 @@ THEN I exit the application, and the HTML is generated<br />
 Following the command line prompts, you can generate your teams profiles, which includes professional title, name, employee ID, email, GitHub profile and school.  The user can access information via the outputted webpage.
 
 ## Test
-The application will test `Employee`, `Manager`, `Engineer`, and `Intern` classes.
+User should test `Employee`, `Manager`, `Engineer`, and `Intern` classes.
 
 ## Link
 Repository Link:  https://github.com/jckutch/team-profile-gen-jk10

@@ -1,16 +1,17 @@
 // Global Varaiable
 
-const Manager = require("./lib/Manager.js")
-const Engineer = require("./lib/Engineer.js")
-const Intern = require("./lib/Intern.js")
-const fs = require("fs")
-const generateTeam = require()
-const inquirer = require("inquirer")
-const outputPath = path.join("path");
-
+const Manager = require("./lib/manager.js");
+const Engineer = require("./lib/engineer.js");
+const Intern = require("./lib/intern.js");
+const generateTeam = require("./src/generate.js");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const path = require("path");
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
+const outputPath = path.join(OUTPUT_DIR, "index.html");
 
 // Create objects for each team member 
-myTeam = [];
+team = [];
 
 function runApp () {
 
@@ -56,7 +57,7 @@ function runApp () {
         },
             ]).then(answers => {
                 const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerNumber);
-                teamArray.push(manager);
+                team.push(manager);
                 myTeam();
             });
     }
@@ -87,7 +88,7 @@ function runApp () {
 
         ]).then(answers => {
             const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.managerEmail, answers.engineerGit);
-            teamArray.push(engineer);
+            team.push(engineer);
             myTeam();
         });
     }
@@ -118,16 +119,15 @@ function runApp () {
 
         ]).then(answers => {
             const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
-            teamArray.push(intern);
+            team.push(intern);
             myTeam();
          });
     }
-
+    // Creates Team
     function htmlBuilder () {
-        console.log(" My Team created!")
-        fs.writeFileSync(outputPath, generateTeam(teamArray), "UTF-8")
+        console.log("My Team created!")
+        fs.writeFileSync(outputPath, generateTeam(team), "UTF-8")
     }
-}
     myTeam();
-
+}
     runApp();
