@@ -2,8 +2,8 @@ const generateTeam = team => {
     const generateManager = manager => {
         return`
     <div class="employee-card">
-    <div class="card-header bg">
-      <h2 class="card-name${manager.getName()}</h2>
+    <div class="card-header">
+      <h2 class="card-name">${manager.getName()}</h2>
       <h4 class="card-title"></i>${manager.getRole()}</h4>
     </div>
     <div class="card-body">
