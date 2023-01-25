@@ -4,7 +4,9 @@ const Manager = require()
 const Engineer = require()
 const Intern = require()
 const fs = require()
+const generateTeam = require()
 const inquirer = require()
+const outputPath = path.join();
 
 
 // Create objects for each team member 
@@ -18,43 +20,46 @@ function runApp () {
         message: "Title of employee to add to team?",
         name: "employeeAdd",
         choices: ["Manager", "Engineer", "Intern", "There are no more member's needed."]
-    }]).then(function (userInput) {
-        switch(userInput.employeeAdd) {
-          case "Manager": managerAdd(); break;
-          case "Engineer": engineerAdd(); break;
-          case "Intern": internAdd(); break;
-          default:
-            htmlBuilder();
-        }
-      })
-    } 
-
+     }]).then(function (userInput) {
+            switch(userInput.employeeAdd) {
+            case "Manager": managerAdd(); break;
+            case "Engineer": engineerAdd(); break;
+            case "Intern": internAdd(); break;
+            default:
+                htmlBuilder();
+            }
+        })
+    }
 // Array of questions for user input
 // Manager Input
-function managerAdd() {
-    inquirer.prompt ([
-    {
-        type: 'input',
-        name: 'managerName',
-        message: "Enter manager's name.",
-    },
-    {
-        type: 'input',
-        name: 'managerId',
-        message: "Enter manager's employee ID.",
-    },
-    {
-        type: 'input',
-        name: 'managerEmail',
-        message: "Enter manager's email address.",
-    },
-    {
-        type: 'input',
-        name: 'managerNumber',
-        message: "Enter manager's office number.",
-    },
-    ]
-    )};
+    function managerAdd() {
+        inquirer.prompt ([
+        {
+            type: 'input',
+            name: 'managerName',
+            message: "Enter manager's name.",
+        },
+        {
+            type: 'input',
+            name: 'managerId',
+            message: "Enter manager's employee ID.",
+        },
+        {
+            type: 'input',
+            name: 'managerEmail',
+            message: "Enter manager's email address.",
+        },
+        {
+            type: 'input',
+            name: 'managerNumber',
+            message: "Enter manager's office number.",
+        },
+            ]).then(answers => {
+                const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerNumber);
+                teamArray.push(manager);
+                createTeam();
+            });
+    }
 
 // Engineer Input
     function engineerAdd() {
@@ -76,12 +81,16 @@ function managerAdd() {
         },
         {
             type: 'input',
-            name: 'engineerNumber',
+            name: 'engineerGit',
             message: "Enter engineer's GitHub username.",
         },
-        ]
-        )};
 
+        ]).then(answers => {
+            const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.managerEmail, answers.engineerGit);
+            teamArray.push(engineer);
+            createTeam();
+        });
+    }
 
 // Intern Input
     function internAdd() {
@@ -103,11 +112,22 @@ function managerAdd() {
         },
         {
             type: 'input',
-            name: 'internNumber',
+            name: 'internSchool',
             message: "Enter intern's school.",
         },
-        ]
-        )};
+
+        ]).then(answers => {
+            const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
+            teamArray.push(intern);
+            createTeam();
+         });
     }
 
-        runApp();
+    function htmlBuilder () {
+        console.log("Team created!")
+        fs.writeFileSync(outputPath, generateTeam(teamArray), "UTF-8")
+    }
+}
+    createTeam();
+
+    runApp();
