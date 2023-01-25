@@ -11,19 +11,18 @@ In this project, I created a CLI application to display a webpage that provides 
 - ### Acceptance Criteria
 - ### Installation
 - ### Usage
+- ### Test
 - ### Link
 - ### Mockup
 - ### License
 
 ## User Story
-
 AS A manager<br />
 I WANT to generate a webpage that displays my team's basic info<br />
 SO THAT I have quick access to their emails and GitHub profiles<br />
 
 
 ## Acceptance Criteria
-
 GIVEN a command-line application that accepts user input<br />
 WHEN I am prompted for my team members and their information<br />
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input<br />
@@ -53,12 +52,14 @@ THEN I exit the application, and the HTML is generated<br />
 ## Usage
 Following the command line prompts, you can generate your teams profiles, which includes professional title, name, employee ID, email, GitHub profile and school.  The user can access information via the outputted webpage.
 
+## Test
+The application will test `Employee`, `Manager`, `Engineer`, and `Intern` classes.
+
 ## Link
 Repository Link:  https://github.com/jckutch/team-profile-gen-jk10
 
 ## Mockup
 Link to Mockup Video: 
-
 
 ## License 
 Licensed under <br /> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://mit-license.org/).

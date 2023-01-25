@@ -1,12 +1,12 @@
 // Global Varaiable
 
-const Manager = require()
-const Engineer = require()
-const Intern = require()
-const fs = require()
+const Manager = require("./lib/Manager.js")
+const Engineer = require("./lib/Engineer.js")
+const Intern = require("./lib/Intern.js")
+const fs = require("fs")
 const generateTeam = require()
-const inquirer = require()
-const outputPath = path.join();
+const inquirer = require("inquirer")
+const outputPath = path.join("path");
 
 
 // Create objects for each team member 
@@ -14,7 +14,7 @@ myTeam = [];
 
 function runApp () {
 
-    function team () {
+    function myTeam () {
       inquirer.prompt([{
         type: "list",
         message: "Title of employee to add to team?",
@@ -57,7 +57,7 @@ function runApp () {
             ]).then(answers => {
                 const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerNumber);
                 teamArray.push(manager);
-                createTeam();
+                myTeam();
             });
     }
 
@@ -88,7 +88,7 @@ function runApp () {
         ]).then(answers => {
             const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.managerEmail, answers.engineerGit);
             teamArray.push(engineer);
-            createTeam();
+            myTeam();
         });
     }
 
@@ -119,15 +119,15 @@ function runApp () {
         ]).then(answers => {
             const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
             teamArray.push(intern);
-            createTeam();
+            myTeam();
          });
     }
 
     function htmlBuilder () {
-        console.log("Team created!")
+        console.log(" My Team created!")
         fs.writeFileSync(outputPath, generateTeam(teamArray), "UTF-8")
     }
 }
-    createTeam();
+    myTeam();
 
     runApp();
