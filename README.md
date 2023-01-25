@@ -46,7 +46,7 @@ THEN I exit the application, and the HTML is generated<br />
 2) Then install the package.json by running `npm init -y`. <br />
 3) Then install `npm i inquirer@8.2.4` to insure the correct version of inquirer. <br />
 4) Then run the CLI application by opening the index.js file in the terminal.
-5) The run the program: `node index`.
+5) Then run the program: `node index`.
 6) Then open the `index.html` file in a browser to output the results.
 
 ## Usage
