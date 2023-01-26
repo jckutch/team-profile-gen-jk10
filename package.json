@@ -1,6 +1,31 @@
 {
   "dependencies": {
     "inquirer": "^8.2.4",
+    "test": "^3.2.1"
+  },
+  "devDependencies": {
     "jest": "^29.4.0"
-  }
+  },
+  "name": "team-profile-gen-jk10",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://mit-license.org/)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jckutch/team-profile-gen-jk10.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jckutch/team-profile-gen-jk10/issues"
+  },
+  "homepage": "https://github.com/jckutch/team-profile-gen-jk10#readme"
 }
