@@ -51,9 +51,9 @@ THEN that GitHub profile opens in a new tab<br />
 1) Copy and clone the repo [team-profile-gen-jk10](https://github.com/jckutch/team-profile-gen-jk10). <br />
 2) Then install the package.json by running `npm init -y`. <br />
 3) Then install `npm i inquirer@8.2.4` to insure the correct version of inquirer. <br />
-4) Then run the CLI application by opening the index.js file in the terminal.
-5) Then run the program: `node index`.
-6) Then open the `index.html` file in a browser to output the results.
+4) Then run the CLI application by opening the index.js file in the terminal. <br />
+5) Then run the program: `node index`. <br />
+6) Then open the `index.html` file in a browser to output the results. <br />
 
 
 
@@ -64,8 +64,8 @@ Following the command line prompts, you can generate your teams profiles, which 
 
 ## Tests
   <a name="tests"></a>
-User should test `Employee`, `Manager`, `Engineer`, and `Intern` classes.
-To run test enter `npm run test` in command line.
+User should test `Employee`, `Manager`, `Engineer`, and `Intern` classes. <br />
+To run test enter `npm run test` in command line. <br />
 
 
 ## Links
