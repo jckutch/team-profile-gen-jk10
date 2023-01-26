@@ -83,5 +83,5 @@ Screenshot HTML:
 ![portfolio-image](./assets/Screenshot_team-profile-gen-jk10.jpg)
 
 ## License 
-  <a name="license"></a> License
+  <a name="license"></a>
 Licensed under <br /> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://mit-license.org/).
