@@ -1,10 +1,10 @@
 .container {
-    background-color: rgb(164, 187, 206);
+    background-color: rgb(208, 222, 233);
 }
 
 .container-fluid {
-    color: rgb(231, 190, 86);
-    font-size: 100px;
+    color: rgb(182, 151, 74);
+    font-size: 1000px;
     background-color: rgb(7, 66, 114);
     margin-block: 2% ;
 }
@@ -21,9 +21,8 @@
 }
 
 .employee-card {
-    margin: 35px;
-    border: 3px  solid rgb(175, 155, 105);
-    background-color: darkgray;
+    margin: 15px;
+    border: 10px solid rgb(145, 145, 145);
 }
 
 .card-header {
@@ -31,12 +30,11 @@
 }
 
 .card-body {
-    background-color:rgb(175, 155, 105);
+    background-color:rgb(145, 145, 145);
 }
 
 h2 {
     text-align: center;
-    text-shadow: 3px;
     color: rgb(182, 151, 74);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
@@ -45,7 +43,6 @@ h2 {
 
 h4 {
     text-align: center;
-    text-shadow: 6px;
     color: whitesmoke;
     font-weight: lighter;
     font-size: 20px;

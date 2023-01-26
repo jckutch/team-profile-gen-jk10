@@ -87,7 +87,7 @@ function runApp () {
         },
 
         ]).then(answers => {
-            const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.managerEmail, answers.engineerGit);
+            const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGit);
             team.push(engineer);
             myTeam();
         });

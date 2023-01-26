@@ -39,6 +39,7 @@ const generateTeam = team => {
           </a>
         </li>
       </ul>
+      </div>
     </div>`;
     };
 
