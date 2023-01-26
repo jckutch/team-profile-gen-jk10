@@ -75,8 +75,12 @@ Repository Link:  https://github.com/jckutch/team-profile-gen-jk10
 
 ## Mockup
   <a name="mockup"></a>
-Link to Mockup Video: 
+Link to Mockup VIDEO: https://drive.google.com/file/d/1rwg-j-i1MO6daPGjO6StKREM_CBnIkx1/view
 
+----------------------------------------------------------------------------------------------------------------------------------------
+Screenshot HTML: 
+
+![portfolio-image](./assets/Screenshot_team-profile-gen-jk10.jpg)
 
 ## License 
   <a name="license"></a> License
