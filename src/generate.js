@@ -58,6 +58,7 @@ const generateTeam = team => {
         </li>
         <li class="list-group-item">School: ${intern.getSchool()}</li>
       </ul>
+      </div>
     </div>`;
     };
 
