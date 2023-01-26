@@ -65,6 +65,7 @@ Following the command line prompts, you can generate your teams profiles, which 
 ## Tests
   <a name="tests"></a>
 User should test `Employee`, `Manager`, `Engineer`, and `Intern` classes.
+To run test enter `npm run test` in command line.
 
 
 ## Links

@@ -105,7 +105,7 @@ module.exports = team => {
     <body class="container">
         <div class="employee-container">
             <div class="row">
-                <div class="team-area col-15 d-flex justify-content-center">${generateTeam(team)}  
+                <div class="team-area col-16 d-flex flex-row flex-wrap justify-content-center">>${generateTeam(team)}  
                 </div>
             </div>
         </div>
